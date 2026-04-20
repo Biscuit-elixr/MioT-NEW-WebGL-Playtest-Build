@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=960 height=540 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -52,16 +52,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Playtest 3.loader.js";
+      var loaderUrl = buildUrl + "/Playtest 4.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Playtest 3.data",
-        frameworkUrl: buildUrl + "/Playtest 3.framework.js",
-        codeUrl: buildUrl + "/Playtest 3.wasm",
+        dataUrl: buildUrl + "/Playtest 4.data",
+        frameworkUrl: buildUrl + "/Playtest 4.framework.js",
+        codeUrl: buildUrl + "/Playtest 4.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Dream Team",
         productName: "Make It On Time V.1",
-        productVersion: "0.1.0",
+        productVersion: "0.1.1",
         showBanner: unityShowBanner,
       };
 
@@ -99,7 +99,7 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
         canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.height = "540px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
